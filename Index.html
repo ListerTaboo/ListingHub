@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>ListingHub</title> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://i.ibb.co/MRq3RGd/cropped-image-2.png" type="image/png">
+  <style>
+    /* Styling for Bio Section */
+    #bio {
+      text-align: center;
+      padding: 40px 15px;
+   
+      border-radius: 25px;
+      margin: 110px auto 40px auto;
+      width: 40%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.5s ease;
+    }
+    #bio h2 {
+      font-size: 28px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+    #bio p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0ffe0;
+    }
+
+    /* Styling for Templates Section */
+    #templates {
+      text-align: center;
+      padding: 30px 25px;
+      background: rgba(0, 81, 0, 0.8);
+      border-radius: 25px;
+      margin: 40px auto;
+      width: 40%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      animation: slideIn 1.5s ease;
+    }
+    #templates h2 {
+      font-size: 28px;
+      color: #000000;
+      margin-bottom: 15px;
+    }
+    #templates p {
+      font-size: 16px;
+      color: #000000;
+      margin-bottom: 15px;
+    }
+    #templates .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #20C20E;
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    #templates .button:hover {
+      background: #1f54d0;
+      transform: scale(1.05);
+    }
+
+    /* Fixed Navbar */
+    nav {
+      z-index: 1000;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="Index.html">
+          <img src="https://i.ibb.co/MRq3RGd/cropped-image-2.png" alt="ListingHub Logo" class="logo-img">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Bio Section -->
+  <section id="bio">
+    
+  </section>
+
+  <!-- Templates Section -->
+  <section id="templates">
+    <h2>My Website Templates</h2>
+    <p>Here are some of the templates I've created. More will be added soon!</p>
+    <a href="https://ppft.netlify.app/" target="_blank" class="button">Purchase Packet Template</a> <br> <br>
+    <a href="" target="_blank" class="button">None</a>
+    
+  </section> <br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="text">
+    <center><h2>Welcome to ListingHub</h2></center>
+    <font color="#0b700b"><center><p>&nbsp;&nbsp;&nbsp;By Walkyy</p></center></font>
+    <br>
+  </div>
+
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>

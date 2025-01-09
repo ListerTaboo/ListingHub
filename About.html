@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>ListingHub</title> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://i.ibb.co/MRq3RGd/cropped-image-2.png" type="image/png">
+  <style>
+    /* Styling for Bio Section */
+    #bio {
+      text-align: center;
+      padding: 100px 105px;
+      background: rgba(11, 112, 11, 0.8);
+      border-radius: 25px;
+      margin: 190px auto 30px auto;
+      width: 40%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.5s ease;
+    }
+    #bio h2 {
+      font-size: 28px;
+      color: #000000;
+      margin-bottom: 25px;
+    }
+    #bio p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #000000;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="Index.html">
+          <img src="https://i.ibb.co/MRq3RGd/cropped-image-2.png" alt="ListingHub Logo" class="logo-img">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Bio Section -->
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>A 15 year old boy from Georgia. Nickname: Walkyy. Just a chill programmer dude who loves doing its favorite work. I hope I can help make your life easier and assist you with everything you need about websites, technologies, etc.</p>
+  </section> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="text">
+    <center><h2>ListingHub</h2></center>
+    <font color="#0b700b"><center><p>&nbsp;&nbsp;&nbsp;By Walkyy</p></center></font>
+    <br>
+  </div>
+
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
